@@ -21,6 +21,9 @@ metadata:
   tags:
     - react
     - website
+  annotations:
+    backstage.io/techdocs-ref: dir:./mkdocs
+  
 spec:
   type: service
   lifecycle: experimental
