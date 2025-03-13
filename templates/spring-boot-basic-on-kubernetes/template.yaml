@@ -89,7 +89,7 @@ spec:
         description: ${{ parameters.description }}
         repoUrl: github.com?owner=${{ parameters.orgName }}&repo=${{ parameters.appName }}
         defaultBranch: ${{ parameters.repoBranchName }}
-        repoVisibility: public
+        repoVisibility: internal
 
     - id: register
       name: Registering the Catalog Info Component
@@ -117,7 +117,7 @@ spec:
         repoUrl: github.com?owner=${{ parameters.orgName }}&repo=${{ parameters.appName }}-config
         defaultBranch: ${{ parameters.repoBranchName }}
         sourcePath: ./gitops
-        repoVisibility: public
+        repoVisibility: internal
 
     - id: sonarqube
       name: Follow new project on Sonarcloud
